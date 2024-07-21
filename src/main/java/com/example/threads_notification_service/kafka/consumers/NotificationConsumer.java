@@ -1,6 +1,6 @@
 package com.example.threads_notification_service.kafka.consumers;
 
-import com.example.threads_notification_service.NotificationService;
+import com.example.threads_notification_service.services.NotificationService;
 import com.example.threads_notification_service.kafka.events.NotificationEvent;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

@@ -1,4 +1,4 @@
-package com.example.threads_notification_service;
+package com.example.threads_notification_service.services;
 
 import com.example.threads_notification_service.models.Notification;
 import com.example.threads_notification_service.repositories.NotificationRepository;
