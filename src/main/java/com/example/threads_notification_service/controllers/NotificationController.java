@@ -1,6 +1,6 @@
 package com.example.threads_notification_service.controllers;
 
-import com.example.threads_notification_service.NotificationService;
+import com.example.threads_notification_service.services.NotificationService;
 import com.example.threads_notification_service.dtos.NotificationRequest;
 import com.example.threads_notification_service.models.Notification;
 import jakarta.transaction.Transactional;
