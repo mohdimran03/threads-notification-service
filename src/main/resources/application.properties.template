@@ -16,3 +16,6 @@ spring.devtools.restart.enabled=true
 spring.kafka.bootstrap-servers=
 spring.kafka.consumer.group-id=threads-notification-service
 spring.kafka.consumer.enable-auto-commit=true
+
+eureka.client.service-url.defaultZone=
+eureka.client.register-with-eureka=true
