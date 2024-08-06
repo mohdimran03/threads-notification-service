@@ -35,7 +35,8 @@ public class NotificationConsumer {
             notificationService.createNotification(
                     notification.getUserId(),
                     notification.getType(),
-                    notification.getContent()
+                    notification.getContent(),
+                    notification.getTweetId()
             );
         } catch (Exception e) {
             logger.error("Failed to process message: {}", message, e);

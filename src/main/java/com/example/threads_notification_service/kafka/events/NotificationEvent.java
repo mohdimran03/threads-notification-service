@@ -6,9 +6,17 @@ public class NotificationEvent {
     private UUID userId;
     private String type;
     private String content;
-
+    private UUID tweetId;
     public UUID getUserId() {
         return userId;
+    }
+
+    public UUID getTweetId() {
+        return tweetId;
+    }
+
+    public void setTweetId(UUID tweetId) {
+        this.tweetId = tweetId;
     }
 
     public void setUserId(UUID userId) {

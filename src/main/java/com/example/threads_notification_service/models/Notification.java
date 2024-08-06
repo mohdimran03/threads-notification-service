@@ -22,11 +22,23 @@ public class Notification {
     private String content;
 
     @Column
+    private UUID tweetId;
+
+    @Column
     private LocalDateTime createdAt;
 
     public Notification() {}
 
     // Getters and setters
+
+
+    public UUID getTweetId() {
+        return tweetId;
+    }
+
+    public void setTweetId(UUID tweetId) {
+        this.tweetId = tweetId;
+    }
 
     public UUID getId() {
         return id;

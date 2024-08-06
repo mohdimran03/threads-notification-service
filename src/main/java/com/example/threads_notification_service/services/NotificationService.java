@@ -26,12 +26,13 @@ public class NotificationService {
      * @param content the content of the notification
      * @return the created Notification entity
      */
-    public Notification createNotification(UUID userId, String type, String content) {
+    public Notification createNotification(UUID userId, String type, String content, UUID tweetId) {
         Notification notification = new Notification();
         notification.setUserId(userId);
         notification.setType(type);
         notification.setContent(content);
         notification.setCreatedAt(LocalDateTime.now());
+        notification.setTweetId(tweetId);
         return notificationRepository.save(notification);
     }
 
