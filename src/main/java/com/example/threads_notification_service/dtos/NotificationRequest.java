@@ -13,6 +13,18 @@ public class NotificationRequest {
 
     @Column
     String content;
+
+    @Column
+    UUID tweetId;
+
+    public UUID getTweetId() {
+        return tweetId;
+    }
+
+    public void setTweetId(UUID tweetId) {
+        this.tweetId = tweetId;
+    }
+
     public UUID getUserId() {
         return userId;
     }

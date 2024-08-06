@@ -24,7 +24,8 @@ public class NotificationController {
         Notification notification = notificationService.createNotification(
                 request.getUserId(),
                 request.getType(),
-                request.getContent()
+                request.getContent(),
+                request.getTweetId()
         );
         return ResponseEntity.status(HttpStatus.CREATED).body(notification);
     }
